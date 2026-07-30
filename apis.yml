@@ -1,8 +1,24 @@
 aid: matx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/matx.png
 name: MatX
-description: 'MatX is a company surfaced as a portfolio company of spark-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: semiconductors. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'MatX is an AI-hardware company designing specialized semiconductors optimized for large
+  language model workloads. Its flagship MatX One chip targets high-throughput, low-latency training,
+  inference, and reinforcement learning for large dense and Mixture-of-Experts models, storing weights
+  in SRAM to cut latency and reaching over 2,000 output tokens per second on large models. MatX is a
+  hardware and research company with no public developer API surface; this profile captures its
+  identity, research/blog output, open-source codebases, and domain-security posture. Backed by Jane
+  Street, Spark Capital, and Situational Awareness LP.'
 url: https://raw.githubusercontent.com/api-evangelist/matx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Semiconductors
+- AI
+- Hardware
+- Machine Learning
+- LLM
+- AI Accelerator
+- Inference
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/matx-domain-security.yml
 - type: Website
   url: https://matx.com
+- type: Blog
+  url: https://matx.com/research
+- type: GitHubOrganization
+  url: https://github.com/MatX-inc
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
